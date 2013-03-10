@@ -9,6 +9,9 @@
 
   <remote name="sourcery"
        	fetch="git://github.com/TeamSourcery/" />
+
+  <remote name="github"
+  	fetch="git://github.com" />
       	 
   <default revision="refs/tags/android-4.2.2_r1"
        	remote="aosp"
@@ -231,8 +234,36 @@
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" revision="refs/tags/android-4.2.1_r1.2" />
+<!-- Default hardware by Google
+  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" revision="refs/tags/android-4.2.1_r1.2" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" revision="refs/tags/android-4.2.1_r1.2" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/power" name="platform/hardware/qcom/power" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" revision="refs/tags/android-4.2.1_r1.2" />
+  <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" revision="refs/tags/android-4.2.1_r1.2" />
+ -->
+<!-- CM hardware repos -->
+  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-10.1" />
+<!--
+  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" remote="github" revision="cm-10.1" />
+  -->
+  <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors" remote="github" revision="cm-10.1" />
+  <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="github" revision="cm-10.1" />
+<!-- End of CM Repos -->
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" revision="refs/tags/android-4.2.1_r1.2" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" revision="refs/tags/android-4.2.1_r1.2" />
@@ -347,4 +378,9 @@
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="cm" revision="cm-10.1" />
   <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="cm" revision="cm-10.1" />
   <project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="cm" revision="cm-10.1" />
+
+  <project path="device/samsung/qcom-common" name="CyanogenMod/android_device_samsung_qcom-common" remote="github" revision="cm-10.1" />
+  <project path="device/samsung/msm8960-common" name="CyanogenMod/android_device_samsung_msm8960-common" remote="github" revision="cm-10.1" />
+  <project path="device/samsung/d2-common" name="CyanogenMod/android_device_samsung_d2-common" remote="github" revision="cm-10.1" />
+  <project path="kernel/samsung/d2" name="ChameleonOS/android_kernel_samsung_d2" remote="github" revision="jellybean-mr1" />
 </manifest>
